@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kalnia:wght@100;200;300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family:'Android';
+    src: url('/fontes/idroid.otf') format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    /*criando variáveis globais em css*/
+    --cor01: #c5ebd6;
+    --cor02: #218A4F;
+    --cor03: #17733F;
+    --cor04: #105E31;
+    --cor05: #074420;
+    --cor06: #083419;
+
+    --fontepadrao: Arial, Helvetica, sans-serif;
+}
+
+/*configurações globais para todos os elementos*/
+*{
+    margin: 0;
+    font-family: var(--fontepadrao);
+}
+
+body{
+    background-color: #c5ebd6;
+}
+
+header{
+    background-image: linear-gradient(to top, #083419, #074420,#105E31,#17733F, #218A4F);
+    padding-top: 50px;
+}
+
+#titulo{
+    font-family: 'Bebas Neue', sans-serif;
+    color:white;
+    font-weight: 100;
+    text-align: center;
+}
+
+#textotitulo{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+nav{
+    margin: 3em auto auto 1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    padding-bottom: 0.5em;
+}
+
+nav > a{
+    color:#7bca9d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.linknav:hover{
+    background-color: rgba(46, 164, 97, 0.652);
+    border-radius: 5px;
+}
+
+.linknav{
+    display: inline-block;
+    height: 1em;
+    padding: 0.5em;
+    margin: auto -1em -0.6em 1em;
+}
+
+main{
+    margin: auto;
+    background-color: white;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 3px 3px 3px rgba(119, 136, 153, 0.529);
+    min-width: 300px;
+    max-width: 1000px;
+}
+
+#tituloartigo{
+    font-family: 'Android','Times New Roman', Times, serif;
+    color:#17733F;
+    padding-top: 6px;
+    padding: 15px;
+}
+
+p{
+    text-indent: 20px;
+    line-height: 24px;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+h2{
+    font-family: 'Android','Times New Roman', Times, serif;
+    color:#17733F;
+    background-color: #218a4e62;
+    text-indent: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+picture{
+    display: block;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+
+#aprendermais{
+    background-color: #2da862;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    text-indent: 10px;
+    line-height: 24px;
+}
+
+#extra{
+    border-radius: 10px;
+    background-color: #bdf1d4;
+    margin: auto 1em auto 1em;
+}
+
+#extra2{
+    padding: 0px 15px 15px 15px;
+}
+
+ul{
+    display: inline-block;
+    list-style-type:none;
+
+}
+
+li::before{
+    content:" ✔ ";
+}
+
+strong{
+    color:#17733F;
+}
+
+.link{
+    color:#17733F;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.link::after{
+    content: "🔗";
+}
+
+#video{
+    background-color: #074420;
+    margin:0px 0px 15px 0px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+    
+}
+
+#video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+footer
+{
+    background-color: #074420;
+    color: white;
+    text-align: center;
+    margin: 1em 0em 0em 0em;
+    padding: 0.5em 0em 0.5em 0em;
+    font-style: italic;
+}
+
+.negrito{
+    font-weight: bold;
+}
